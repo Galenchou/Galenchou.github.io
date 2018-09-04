@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="时间很快六月份，算是最忙的一个月，也是最累的一个月，从5.21号左右开始，鲸音3.0版本开始做，大概熬了多个多月，基本每天都是凌晨4点多下班，然后回去，第二天中午上班，这真的是一种挑战，主要原因是真的页面多，还有就是逻辑多，然后就是测试的时候花了太多时间了，前后端调试总是出问题，我感觉就是工具没有用到位，前后端依赖性太强，测试没有分离。前后端测试要分离； 项目总结1,小程序的坑这个月真的是踩了很多">
+<meta property="og:type" content="article">
+<meta property="og:title" content="六月份工作总结">
+<meta property="og:url" content="http://yoursite.com/2018/07/01/六月份工作总结/index.html">
+<meta property="og:site_name" content="彻夜">
+<meta property="og:description" content="时间很快六月份，算是最忙的一个月，也是最累的一个月，从5.21号左右开始，鲸音3.0版本开始做，大概熬了多个多月，基本每天都是凌晨4点多下班，然后回去，第二天中午上班，这真的是一种挑战，主要原因是真的页面多，还有就是逻辑多，然后就是测试的时候花了太多时间了，前后端调试总是出问题，我感觉就是工具没有用到位，前后端依赖性太强，测试没有分离。前后端测试要分离； 项目总结1,小程序的坑这个月真的是踩了很多">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-07-01T09:28:53.539Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="六月份工作总结">
+<meta name="twitter:description" content="时间很快六月份，算是最忙的一个月，也是最累的一个月，从5.21号左右开始，鲸音3.0版本开始做，大概熬了多个多月，基本每天都是凌晨4点多下班，然后回去，第二天中午上班，这真的是一种挑战，主要原因是真的页面多，还有就是逻辑多，然后就是测试的时候花了太多时间了，前后端调试总是出问题，我感觉就是工具没有用到位，前后端依赖性太强，测试没有分离。前后端测试要分离； 项目总结1,小程序的坑这个月真的是踩了很多">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/07/01/六月份工作总结/"/>
+
+
+
+
+
+  <title>六月份工作总结 | 彻夜</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">彻夜</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/01/六月份工作总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="彻夜">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="彻夜">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">六月份工作总结</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-01T13:36:05+08:00">
+                2018-07-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="时间很快"><a href="#时间很快" class="headerlink" title="时间很快"></a>时间很快</h1><p>六月份，算是最忙的一个月，也是最累的一个月，从5.21号左右开始，鲸音3.0版本开始做，大概熬了多个多月，基本每天都是凌晨4点多下班，然后回去，第二天中午上班，这真的是一种挑战，主要原因是真的页面多，还有就是逻辑多，然后就是测试的时候花了太多时间了，前后端调试总是出问题，我感觉就是工具没有用到位，前后端依赖性太强，测试没有分离。<strong>前后端测试要分离</strong>；</p>
+<h1 id="项目总结"><a href="#项目总结" class="headerlink" title="项目总结"></a>项目总结</h1><h3 id="1-小程序的坑"><a href="#1-小程序的坑" class="headerlink" title="1,小程序的坑"></a>1,小程序的坑</h3><p>这个月真的是踩了很多小程序的坑，第一个就是关于录音的问题，在使用他们的api时，由于整个页面只声明了一个录音api，然后<code>record.onStop()</code>的时候，无论在页面那个函数里里面调用<code>recordStop()</code>方法，都会触发<code>record.onStop(）</code>函数,所以这一点在录音的时候一定要注意。然后就是组件swiper的问题，如果在swiper组件里面使用当前的index，去使用<code>that.setData({index:index})</code>就会出现循环赋值，从而导致页面一直出错。</p>
+<h3 id="2，后端的坑"><a href="#2，后端的坑" class="headerlink" title="2，后端的坑"></a>2，后端的坑</h3><p>后端采用了springCloud+springBoot微服务的方式，从而导致了后端在部署的方式遇到了很大的障碍，因为公司只有四台服务器，其中就一台的性能稍微好点，然后就<code>使用docker</code>的话，会很占用内容，然后公司没有采用这种方式。同时在部署的时候，nginx总是会报错，没办法进行转发，后来才发现这个问题，主要时因为转发的时候总是会出现header的问题，由于小程序的每次请求，头部都会携带一个token来给后端，验证是否安全，然后就在nginx配置的时候，没有考虑到header的问题，导致一直出错。</p>
+<h3 id="3，布局的坑"><a href="#3，布局的坑" class="headerlink" title="3，布局的坑"></a>3，布局的坑</h3><p>小程序也可以使用float布局，同时学习到了解决浮动带来的塌陷 的一个方法就是在父元素上面添加一个<code>overflow:hidden</code>,就可以解决高度塌陷的问题，同时这次小程序开发页学习到了流式布局的方式排版。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/16/工作总结/" rel="next" title="项目总结v2.0">
+                <i class="fa fa-chevron-left"></i> 项目总结v2.0
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/09/01/要好好学习了，要多动手/" rel="prev" title="要好好学习了，要多动手">
+                要好好学习了，要多动手 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">彻夜</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#时间很快"><span class="nav-number">1.</span> <span class="nav-text">时间很快</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#项目总结"><span class="nav-number">2.</span> <span class="nav-text">项目总结</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-小程序的坑"><span class="nav-number">2.0.1.</span> <span class="nav-text">1,小程序的坑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2，后端的坑"><span class="nav-number">2.0.2.</span> <span class="nav-text">2，后端的坑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3，布局的坑"><span class="nav-number">2.0.3.</span> <span class="nav-text">3，布局的坑</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">彻夜</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
